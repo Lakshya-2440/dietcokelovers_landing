@@ -36,11 +36,37 @@ export function Navbar() {
     >
       <div className="container mx-auto max-w-7xl px-6 md:px-12 flex h-20 items-center justify-between">
         
-        {/* Aesthetic Typographic Logo */}
-        <a href="#" className="flex items-baseline tracking-tight group hover:opacity-90 transition-opacity">
-          <span className="font-serif text-[26px] font-bold text-foreground">Ask</span>
-          <span className="font-serif text-[26px] font-light italic text-foreground/80">MyNotes</span>
-          <span className="text-accent-blue/80 text-[26px] ml-[2px] font-serif transition-colors group-hover:text-accent-blue">.</span>
+        {/* Aesthetic Visual Logo */}
+        <a href="#" className="flex items-center gap-2 group hover:opacity-90 transition-opacity">
+          <div className="relative flex items-center justify-center w-8 h-8 text-foreground">
+            <svg 
+              width="28" 
+              height="28" 
+              viewBox="0 0 32 32" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="transform group-hover:-rotate-[4deg] transition-transform duration-500 ease-out"
+            >
+              <title>AskMyNotes Logo</title>
+              {/* Back Paper (Abstract) */}
+              <rect x="7" y="10" width="16" height="20" rx="1.5" transform="rotate(-6 7 10)" className="fill-current opacity-10" />
+              <rect x="7" y="10" width="16" height="20" rx="1.5" transform="rotate(-6 7 10)" className="stroke-current" strokeWidth="2" strokeLinejoin="round" />
+              
+              {/* Front Paper (Main Note) */}
+              <rect x="10" y="6" width="16" height="20" rx="1.5" className="fill-[#F7F6F2] stroke-current" strokeWidth="2" strokeLinejoin="round" />
+              
+              {/* Note Content (Lines) */}
+              <path d="M14 12H22" className="stroke-accent-blue" strokeWidth="2" strokeLinecap="round" />
+              <path d="M14 16H22" className="stroke-accent-blue" strokeWidth="2" strokeLinecap="round" />
+              <path d="M14 20H18" className="stroke-accent-blue" strokeWidth="2" strokeLinecap="round" />
+              
+              {/* The "Ask/Intelligence" Spark intersecting the notes */}
+              <circle cx="26" cy="6" r="4.5" className="fill-accent-green stroke-[#F7F6F2]" strokeWidth="2" />
+            </svg>
+          </div>
+          <span className="font-serif text-[22px] font-medium tracking-tight text-foreground -mt-0.5">
+            AskMyNotes
+          </span>
         </a>
 
         {/* Desktop Nav */}
