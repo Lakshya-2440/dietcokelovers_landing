@@ -36,15 +36,11 @@ export function Navbar() {
     >
       <div className="container mx-auto max-w-7xl px-6 md:px-12 flex h-20 items-center justify-between">
         
-        {/* Aesthetic Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="h-6 w-6 rounded border border-foreground/20 flex items-center justify-center bg-white shadow-sm transition-transform group-hover:-rotate-6">
-            <span className="font-serif font-bold text-sm leading-none pt-0.5">A</span>
-          </div>
-          <span className="font-serif text-xl font-medium tracking-tight text-foreground">
-            AskMyNotes
-            <span className="text-accent-blue/80 text-2xl leading-[0]">.</span>
-          </span>
+        {/* Aesthetic Typographic Logo */}
+        <a href="#" className="flex items-baseline tracking-tight group hover:opacity-90 transition-opacity">
+          <span className="font-serif text-[26px] font-bold text-foreground">Ask</span>
+          <span className="font-serif text-[26px] font-light italic text-foreground/80">MyNotes</span>
+          <span className="text-accent-blue/80 text-[26px] ml-[2px] font-serif transition-colors group-hover:text-accent-blue">.</span>
         </a>
 
         {/* Desktop Nav */}
