@@ -2,7 +2,9 @@ import * as React from "react"
 import { cn } from "../../lib/utils"
 import { motion } from "framer-motion"
 
-export interface ChatBubbleProps extends React.HTMLAttributes<HTMLDivElement> {
+import { HTMLMotionProps } from "framer-motion"
+
+export interface ChatBubbleProps extends HTMLMotionProps<"div"> {
   role: "user" | "assistant"
   children: React.ReactNode
   delay?: number
